@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizmo Clone - Owner Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Owner Panel</h1>
+<input type="text" id="subject-name" placeholder="Naziv predmeta">
+<button onclick="addSubject()">Dodaj predmet</button>
+<select id="subject-select" onchange="displayLessons(this.value)">
+<option value="">Odaberi predmet</option>
+</select>
+<input type="text" id="lesson-title" placeholder="Naslov lekcije">
+<textarea id="lesson-text" placeholder="Tekst lekcije"></textarea>
+<button onclick="addLesson()">Dodaj lekciju</button>
+<div id="lessons-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
