@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gizmo Clone - Lekcije</title>
+<title>Lekcije - Gizmo Clone</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Dobrodošli na Gizmo Clone</h1>
+<h1>Lekcije</h1>
 <select id="subject-select" onchange="displayLessons(this.value)">
-<option value="">Odaberi predmet</option>
+  <option value="">Odaberi predmet</option>
 </select>
 <div id="lessons-container"></div>
+<button onclick="logout()">Odjava</button>
 <script src="script.js"></script>
 </body>
 </html>
